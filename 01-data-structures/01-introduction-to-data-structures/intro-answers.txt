@@ -1,0 +1,5 @@
+## Line
+The line data structure is simply an array of strings which each represent a person's name. When a person joins the line, the person is pushed onto the end of the array. When a person leaves the line, the element at that index of the array is removed, thereby shifting all elements after it forward. In order to search for a person, you simply loop through the line array until you find a match and return that person.
+
+## Screen
+The screen data structure is a matrix. The top level array represents the screen, with nested subarrays which represent the x coordinates equal to their index within screen. Each x subarray then stores each pixel's data at the index position corresponding to their y coordinate. This allows us to access each pixel's data by their x,y coordinates --> screen[x][y]. When the screen is initialized, each pixel is created within the screen matrix with a nil value.

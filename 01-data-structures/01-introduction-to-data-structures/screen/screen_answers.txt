@@ -1,0 +1,2 @@
+## Screen
+The screen data structure is a matrix. The top level array represents the screen, with nested subarrays which represent the x coordinates equal to their index within screen. Each x subarray then stores each pixel's data at the index position corresponding to their y coordinate. This allows us to access each pixel's data by their x,y coordinates --> screen[x][y]. When the screen is initialized, each pixel is created within the screen matrix with a nil value.
