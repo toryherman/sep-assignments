@@ -1,0 +1,12 @@
+1. Spatial locality refers to the proximity of elements of an array as they are stored consecutively within memory. This is a benefit to arrays as the operating system can only grab a chunk of data at a time. Being that the elements are stored next to each other, it reduces the amount of times the operating system must go back and grab another bunch of data.
+
+2.
+                                      user       system     total    real
+create array:                         0.000000   0.000000   0.000000 (  0.001201)
+create linked list:                   0.000000   0.000000   0.000000 (  0.002538)
+delete 5000th elem from array:        0.000000   0.000000   0.000000 (  0.000011)
+delete 5000th elem from linked list:  0.000000   0.000000   0.000000 (  0.000587)
+
+The linked list took longer than the array in both tests. For creating the lists, the linked list took about twice as long as the array. This could possibly be attributed to the additional "next" data that must be updated as additional nodes are created.
+
+The deletion test took much longer for the linked list than the array. Deletion is a quick, simple process for an array, simply accessing the element by index value. This process is much more involved using linked lists as you must loop through all elements until finding a match.
