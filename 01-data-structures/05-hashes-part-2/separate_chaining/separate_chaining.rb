@@ -88,4 +88,28 @@ class SeparateChaining
       end
     end
   end
+
+  def current_state
+    i = 0
+    @items.each do |x|
+      str = "List #{i}:"
+      puts str
+
+      if x
+        current = x.head
+        j = 0
+        while current
+          sub_str = "#{j}. Key: #{current.key}, Value: #{current.value}"
+          j += 1
+          current = current.next
+          puts sub_str
+        end
+      else
+        puts "nil"
+      end
+
+      i += 1
+    end
+  end
+
 end

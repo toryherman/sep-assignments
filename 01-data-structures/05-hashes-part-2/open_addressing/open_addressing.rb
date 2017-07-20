@@ -13,7 +13,7 @@ class OpenAddressing
 
       if i == -1
         resize
-        i = @items.size - 1
+        i = index(key, @items.size)
       end
     end
 
@@ -32,7 +32,7 @@ class OpenAddressing
       end
 
       i += 1
-      
+
       if i >= @items.size && stop == false
         i = 0
         stop = true
@@ -91,4 +91,18 @@ class OpenAddressing
       end
     end
   end
+
+  def current_state
+    i = 0
+    @items.each do |x|
+      if x
+        str = "#{i}. Key: #{x.key}, Value: #{x.value}"
+      else
+        str = "#{i}. nil"
+      end
+      puts str
+      i += 1
+    end
+  end
+
 end
