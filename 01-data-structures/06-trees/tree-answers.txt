@@ -1,0 +1,10 @@
+                                     user        system      total       real
+create 10,000 item binary tree:      6.520000    0.020000    6.540000    (  6.661380)
+find item 5,000 in binary tree:      0.000000    0.000000    0.000000    (  0.002356)
+delete item 5,000 from binary tree:  0.000000    0.000000    0.000000    (  0.002934)
+insert item 5,000 into binary tree:  0.000000    0.000000    0.000000    (  0.000600)
+
+create 10,000 item heap:             8.900000    0.060000    8.960000    (  9.139758)
+find item 5,000 in heap:             0.000000    0.000000    0.000000    (  0.000837)
+delete item 5,000 from heap:         0.000000    0.000000    0.000000    (  0.002789)
+insert item 5,000 into heap:         0.000000    0.000000    0.000000    (  0.001629)
