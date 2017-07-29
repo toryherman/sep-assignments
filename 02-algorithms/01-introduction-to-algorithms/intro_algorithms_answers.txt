@@ -1,0 +1,66 @@
+# do laundry
+DEF DO_LAUNDRY
+  FOR each laundry item
+    IF item is white
+      SET item to white pile
+    ELSE
+      SET item to color pile
+    ENDIF
+  END FOR
+
+  FOR each laundry pile
+    IF pile is equal to white
+      SET wash temperature to warm
+    ELSE
+      SET wash temperature to cold
+    ENDIF
+
+    add pile to washer
+    add laundry detergent
+    run washer
+
+    when washer stops
+      remove pile
+      place in dryer
+
+    when dryer stops
+      remove pile
+
+    FOR each dry item
+      fold item
+      place in basket
+    END FOR
+  END FOR
+END DEF
+
+
+# make pbj
+DEF MAKE_PBJ
+  GET two pieces of bread
+
+  WHILE first piece is not wholly covered
+    apply peanut butter
+  END WHILE
+
+  WHILE second piece is not wholly covered
+    apply jelly
+  END WHILE
+
+  place first piece peanut butter side on top of second piece jelly side
+END DEF
+
+# wash dishes
+DEF WASH_DISHES
+  WHILE dirty dishes exist
+    run warm water
+
+    FOR each dish
+      WHILE dish dirty
+        place dish under water
+        scrub dish
+      END WHILE
+
+      place dish in drying rack
+    END FOR
+  END WHILE
+END DEF
