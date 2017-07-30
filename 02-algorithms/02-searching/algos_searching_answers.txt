@@ -1,0 +1,19 @@
+1. Linear search to find value "G" in an alphabetical list would take seven iterations.
+2. Binary search to find value "G" in an alphabetical list would take four iterations.
+3. Fibonacci 10, 11, 12
+   n  | fib(n-2) | fib(n-1) | fib(n)
+   10 | 21       | 34       | 55
+   11 | 34       | 55       | 89
+   12 | 55       | 89       | 144
+
+4. Fibonacci benchmark comparison
+fibonacci recursive fib(20):  0.010000   0.000000   0.010000 (  0.002017)
+fibonacci iterative fib(20):  0.000000   0.000000   0.000000 (  0.000013)
+
+An iterative Fibonacci function is more efficient as recursion requires many more function calls.
+e.g. fib(20) = fib(19) +           fib(18)
+     fib(20) = fib(18) + fib(17) + fib(17) + fib(16)
+     etc.
+
+5. For an unsorted collection, I would use linear search since binary search only works when the data is sorted.
+6. Binary search is a better option for sorted collections. Binary search drastically cuts down the amount of iterations necessary to locate the target data as each iteration removes half the collection from the search.
