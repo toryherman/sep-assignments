@@ -1,0 +1,4 @@
+                              user        system      total       real
+quick sort 1000 item array:   0.010000    0.000000    0.010000    (  0.003141)
+heap sort 1000 item array:    0.000000    0.000000    0.000000    (  0.003766)
+bucket sort 1000 item array:  0.000000    0.000000    0.000000    (  0.003517)
