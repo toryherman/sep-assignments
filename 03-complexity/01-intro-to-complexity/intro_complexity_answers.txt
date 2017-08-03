@@ -1,0 +1,23 @@
+1. An algorithm with efficiency O(1) is like getting the total weight of a bundle of grapes on a scale--no matter how many grapes there are and how much the bundle weighs, it takes the scale the same amount of time to return the weight. An algorithm with efficiency O(2^n) is like getting the weights of all possible combinations of grapes--as the amount of grapes increases, the time it takes increases exponentially.
+
+2. The best case scenario for a binary search would be searching for the root node (top level), which would be the median value of the BST.
+
+3. The worst case scenario for a binary search would be searching for an element at the bottom of the tree, in which it would have to traverse each level of the tree.
+
+4. A bounded-case scenario for a binary search would be searching for an element halfway down the height of the tree.
+
+5. See google sheet.
+
+6. Infinity/limit does not exist
+
+7. O(2^n)
+
+8. See linear_search.rb file.
+
+9. See google sheet.
+
+10. Binary search O(n)
+
+11. Binary search Ω(1)
+
+12. Binary search θ(log n)
