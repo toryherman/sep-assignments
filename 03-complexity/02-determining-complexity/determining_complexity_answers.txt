@@ -1,0 +1,29 @@
+1. O(1) - The time to execute goodbye_world(n) is constant regardless of the size of n.
+
+2. O(n) - The time to execute find_largest(collection) has linear time complexity as it must iterate through all n elements to find the largest element. The comparison of elements does not change the complexity of the function as it is a constant time operation.
+
+3. O(n) - The complexity of find_largest(collection) for a 2D array is still linear, as the number of operations grows at a linear rate compared to the total number of elements n within all subarrays.
+
+4. O(2^n) - The numbers(n) function has exponential time complexity because as the number n increases, the amount of recursions increases exponentially. The recursions can be depicted as a tree with n layers, as it splits up n and runs recursively for (n-1) and (n-2) until n is equal to 0 or 1.
+
+e.g. numbers(3) -> 5 operations
+
+                 3
+               /   \
+              2     1
+            /   \
+           1     0
+
+e.g. numbers(4) -> 9 operations
+
+                   4
+               /       \
+              3         2
+            /   \     /   \
+           2     1   1     0
+         /   \
+        1     0
+
+5. O(n) - The complexity of the iterative(n) function is linear as it iterates (n-1) times in order to return the answer.
+
+6. O(n^2) - The sort function has quadratic time complexity. The worst-case scenario would be sorting a collection that begins either already sorted or in reverse order. The function iterates through the collection to make subgroups around a pivot point, then recursively sorts said subgroups. As n grows, the collection must be iterated over multiple more times as its recursions increase.
