@@ -1,0 +1,3 @@
+Version one utilizes insertion sort, which has time complexity of O(n^2).
+Version two utilizes merge sort, which has time complexity of O(n log(n)).
+Version three utilizes selection sort, which has space complexity of O(1).
